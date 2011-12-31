@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Ejemplo SQLite</string>
+    <string name="tvTitulo">Titulo:</string>
+    <string name="tvCuerpo">Cuerpo:</string>
+    <string name="btnInsertar">Insertar</string>
+    <string name="btnCancelar">Cancelar</string>
+    <string name="tvEmpty">Base de datos vacía.</string>
+
+</resources>
