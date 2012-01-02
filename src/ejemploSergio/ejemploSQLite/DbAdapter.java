@@ -36,8 +36,8 @@ public class DbAdapter {
 	 * Para conectar y abrir la base de datos en modo escritura (lectura
 	 * permitida).
 	 * 
-	 * @return Devuelve un objeto de su misma clase como manipulador de la base
-	 *         de datos.
+	 * @return Devuelve un objeto de clase SQLiteDatabase como manipulador de la
+	 *         base de datos.
 	 * @throws SQLException
 	 */
 	public DbAdapter open() throws SQLException {
@@ -46,7 +46,7 @@ public class DbAdapter {
 		// Abre la base de datos en modo escritura (lectura permitida).
 		db = dbHelper.getWritableDatabase();
 		// El objeto de tipo DbAdapter se devuelve a sí mismo.
-		return this;
+		return db;
 	}
 
 	/**
