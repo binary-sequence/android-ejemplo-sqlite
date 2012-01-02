@@ -133,7 +133,7 @@ public class DbAdapter {
 	 *            Campo cuerpo del registro.
 	 * @return Devuelve cuántos registros han sido afectados.
 	 */
-	public boolean actualizarNota(long idRegistro, String titulo, String cuerpo) {
+	public int actualizarNota(long idRegistro, String titulo, String cuerpo) {
 		// Variable utilizada para enviar los datos al método update.
 		ContentValues registro = new ContentValues();
 
@@ -143,6 +143,6 @@ public class DbAdapter {
 
 		// Inserta el registro y devuelve el resultado.
 		return db.update(SqLiteHelper.DATABASE_TABLE, registro,
-				SqLiteHelper.KEY_ID + "=" + idRegistro, null) > 0;
+				SqLiteHelper.KEY_ID + "=" + idRegistro, null);
 	}
 }
