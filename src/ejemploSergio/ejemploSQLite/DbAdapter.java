@@ -40,12 +40,12 @@ public class DbAdapter {
 	 *         base de datos.
 	 * @throws SQLException
 	 */
-	public DbAdapter open() throws SQLException {
+	public SQLiteDatabase open() throws SQLException {
 		// Crea un objeto asistente de base de datos de clase SqLiteHelper.
 		dbHelper = new SqLiteHelper(contexto);
 		// Abre la base de datos en modo escritura (lectura permitida).
 		db = dbHelper.getWritableDatabase();
-		// El objeto de tipo DbAdapter se devuelve a sí mismo.
+		// Devuelve el objeto de tipo SQLiteDatabase.
 		return db;
 	}
 
